@@ -2,15 +2,16 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib
+import pickle
 
 # 🔹 1. Load Model and Preprocessing Pipeline
 @st.cache_resource
 def load_model():
-    return joblib.load("v3_model__.pkl")
+    return pickle.load("v3_model__.pkl")
 
 @st.cache_resource
 def load_pipeline():
-    return joblib.load("preprocessing_pipeline.pkl")
+    return pickle.load("preprocessing_pipeline.pkl")
 
 # 🔹 2. User Input Function
 def user_input():
