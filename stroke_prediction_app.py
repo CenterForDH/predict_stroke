@@ -4,13 +4,15 @@ import pandas as pd
 import pickle
 
 # 🔹 1. Load Model and Preprocessing Pipeline
-@st.cache_resource
+@st.cache_data
 def load_model():
-    return pickle.load("v3_model__.pkl")
+    with open("v3_model__.pkl", "rb") as f:
+        return pickle.load(f)
 
 @st.cache_resource
 def load_pipeline():
-    return pickle.load("preprocessing_pipeline.pkl")
+    with open("preprocessing_pipeline.pkl", "rb") as f:
+        return pickle.load(f)
 
 # 🔹 2. User Input Function
 def user_input():
