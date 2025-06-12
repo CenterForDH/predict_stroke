@@ -4,12 +4,11 @@ import pandas as pd
 import pickle
 
 # 🔹 1. Load Model and Preprocessing Pipeline
-@st.cache_data
+
 def load_model():
     with open("v3_model__.pkl", "rb") as f:
         return pickle.load(f)
 
-@st.cache_resource
 def load_pipeline():
     with open("preprocessing_pipeline.pkl", "rb") as f:
         return pickle.load(f)
