@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
+import sklearn
 
 # 🔹 1. Load Model and Preprocessing Pipeline
 @st.cache_data
