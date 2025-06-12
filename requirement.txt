@@ -4,3 +4,4 @@ numpy
 scikit-learn
 catboost
 scikit-optimize
+sklearn
