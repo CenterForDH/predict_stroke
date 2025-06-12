@@ -6,11 +6,11 @@ import joblib
 # 🔹 1. Load Model and Preprocessing Pipeline
 @st.cache_resource
 def load_model():
-    return joblib.load(r"\\khu-server\KH_UNIV\곽은진\ML_stroke\pkl\v3_model__.pkl")
+    return joblib.load("v3_model__.pkl")
 
 @st.cache_resource
 def load_pipeline():
-    return joblib.load(r"\\khu-server\KH_UNIV\곽은진\ML_stroke\pkl\preprocessing_pipeline.pkl")
+    return joblib.load("preprocessing_pipeline.pkl")
 
 # 🔹 2. User Input Function
 def user_input():
