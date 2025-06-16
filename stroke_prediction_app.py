@@ -6,7 +6,7 @@ import pickle
 # 🔹 1. Load Model and Preprocessing Pipeline
 
 def load_model():
-    with open("v3_model__.pkl", "rb") as f:
+    with open("v3_model.pkl", "rb") as f:
         return pickle.load(f)
 
 def load_pipeline():
